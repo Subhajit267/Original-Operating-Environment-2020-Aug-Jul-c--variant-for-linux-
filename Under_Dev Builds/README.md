@@ -1,9 +1,8 @@
----
 # 🛠️ Under‑development Builds – Operating Environment (Linux)
 
 <div align="center">
 
-![Builds](https://img.shields.io/badge/Builds-3-orange)
+![Builds](https://img.shields.io/badge/Builds-4-orange)
 ![Status](https://img.shields.io/badge/Status-Experimental-red)
 ![Purpose](https://img.shields.io/badge/Purpose-Testing%20%26%20Prototyping-yellow)
 
@@ -33,9 +32,10 @@ The **Under_dev Builds** folder contains intermediate snapshots taken during act
 
 ```
 📁 Under_dev Builds/
-├── 📁 v4.05.11/      # Post‑v4.05.08 development snapshot
-├── 📁 v4.05.12/      # Further refinements and experiments
-└── 📁 v4.23.09/      # Later development, possibly leading to a future release
+├── 📁 v4.05.11/                # Post‑v4.05.08 development snapshot
+├── 📁 v4.05.12/                # Further refinements and experiments
+├── 📁 v4.23.09/                # Later development, possibly leading to a future release
+└── 📁 v5.01.08-experimental/   # Experimental live‑clock build (based on final stable)
 ```
 
 Each folder includes the source files as they existed at that point in time, along with a brief README describing the state of the build and any notable changes from the previous stable version.
@@ -64,7 +64,12 @@ These builds are **not recommended for general use** – they are provided for e
 ### v4.23.09
 - **Date:** 28/12/2021
 - **Focus:** Later development, maybe targeting a v5.0 that was never completed.
-- **Status:** The most advanced but also the most experimental.
+- **Status:** The most advanced but also the most experimental among the early builds.
+
+### v5.01.08-experimental
+- **Date:** February 2026
+- **Focus:** **Live clock & non‑blocking input** – This build is based on the final stable release (v5.01.08) and attempts to add a real‑time updating clock and command history using raw terminal mode and `select()`. The clock updates every second, and the shell supports arrow‑key history and line editing.
+- **Status:** **Highly experimental and unstable** – Many applications (TicTacToe, quiz, etc.) break because raw mode conflicts with standard `cin`. The code is preserved as a proof‑of‑concept for future projects like `oe-reboot`. Use at your own risk!
 
 ## ⚠️ Important Notes
 
