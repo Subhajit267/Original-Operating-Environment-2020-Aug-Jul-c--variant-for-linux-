@@ -159,5 +159,3 @@ This repository preserves the exact source code of each version, exactly as it w
 </div>
 
 ---
-
-Now you can place this as the root `README.md` in your Linux repo. When you're ready, send me the details (or the actual code) for any specific release folder (e.g., v1.0, v2.01, etc.) and I'll generate a similarly styled README for that version, including its own features, changelog, and compilation instructions.
