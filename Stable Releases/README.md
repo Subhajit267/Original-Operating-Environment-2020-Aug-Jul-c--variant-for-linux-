@@ -1,7 +1,7 @@
 ---
-
+<div align="center">
 # 📦 Stable Releases – Operating Environment (Linux)
-
+</div>
 <div align="center">
 
 ![Releases](https://img.shields.io/badge/Releases-4-blue)
@@ -55,7 +55,7 @@ Each folder contains:
 | **v1.0** | Mid‑2020 | TicTacToe, Quiz, Calculator, Temperature Converter |
 | **v2.01** | Late 2020 | Linear equation solver, bootscreen, single login, faster installer |
 | **v3.0** | Early 2021 | Difficulty levels in TicTacToe, registry editor, cheat codes, enhanced equation solver |
-| **v4.05.08** | 2021–2022 | Quadratic equation solver, settings app, Kelvin support, user account improvements |
+| **v4.05.08** | Late 2021 | Quadratic equation solver, settings app, Kelvin support, user account improvements |
 
 ## 🔍 How to Navigate
 
