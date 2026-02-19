@@ -1,6 +1,5 @@
 ---
 
-```markdown
 # 📦 Stable Releases – Operating Environment (Linux)
 
 <div align="center">
