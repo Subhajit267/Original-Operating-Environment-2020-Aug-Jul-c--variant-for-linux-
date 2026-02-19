@@ -1,7 +1,5 @@
 ---
-<div align="center">
 # 📦 Stable Releases – Operating Environment (Linux)
-</div>
 <div align="center">
 
 ![Releases](https://img.shields.io/badge/Releases-4-blue)
