@@ -86,6 +86,5 @@ Refer to each version's README for exact file lists and any version‑specific r
 *Each release is a snapshot of the project's growth – explore them in order to witness the journey.*
 
 </div>
-```
 
 ---
