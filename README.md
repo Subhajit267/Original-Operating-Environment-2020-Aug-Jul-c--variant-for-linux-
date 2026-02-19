@@ -9,7 +9,7 @@
 ![Terminal](https://img.shields.io/badge/UI-Console%20ANSI-brightgreen)
 ![Status](https://img.shields.io/badge/Status-Archival%20Project-lightgrey)
 
-**Complete source code history of a hobby operating environment built from scratch (2020–2022)**
+**Complete source code history of a hobby operating environment built from scratch (2020–2021)**
 
 *Four major releases, multiple under‑development builds, and a fully functional console‑based shell with built‑in applications*
 
