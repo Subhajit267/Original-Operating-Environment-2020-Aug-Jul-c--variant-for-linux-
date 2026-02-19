@@ -52,17 +52,17 @@ These builds are **not recommended for general use** – they are provided for e
 ## 📝 Build Details
 
 ### v4.05.11
-- **Date:** [Insert approximate date, e.g., late 2021]
+- **Date:** 07/11/2021
 - **Focus:** Likely refinements to the settings app or registry editor.
 - **Status:** Unfinished; may contain bugs.
 
 ### v4.05.12
-- **Date:** [Insert date]
+- **Date:** 15/11/2021
 - **Focus:** Further work on the same features, perhaps with new experiments.
 - **Status:** Possibly more stable than v4.05.11, but still a development snapshot.
 
 ### v4.23.09
-- **Date:** [Insert date]
+- **Date:** 28/12/2021
 - **Focus:** Later development, maybe targeting a v5.0 that was never completed.
 - **Status:** The most advanced but also the most experimental.
 
