@@ -1,180 +1,95 @@
-# 🔧 Operating Environment – Original Linux Implementation
+# 📦 Stable Releases – Operating Environment (Linux)
 
 <div align="center">
 
-![C++](https://img.shields.io/badge/Language-C++-blue?logo=c%2B%2B&logoColor=white)
-![Linux](https://img.shields.io/badge/Platform-Linux-yellow?logo=linux&logoColor=white)
-![Terminal](https://img.shields.io/badge/UI-Console%20ANSI-brightgreen)
-![Status](https://img.shields.io/badge/Status-Archival%20Project-lightgrey)
+![Releases](https://img.shields.io/badge/Releases-5-blue)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
+![Time Span](https://img.shields.io/badge/Time%20Span-2020--2026-lightgrey)
 
-**Complete source code history of a hobby operating environment built from scratch (2020–2026)**
+**This directory contains every officially released version of Operating Environment for Linux**
 
-*Four major releases, multiple under‑development builds, and a final stable version with all known bugs fixed.*
+*From the humble beginnings of v1.0 to the final polished v5.01.08, each release represents a milestone in the project's evolution.*
 
 </div>
 
 ## 📋 Table of Contents
 - [🌟 Overview](#-overview)
-- [🏗️ Repository Structure](#️-repository-structure)
-- [🚀 Key Features Across Versions](#-key-features-across-versions)
-- [🖥️ System Architecture](#️-system-architecture)
-- [📦 Historical Context](#-historical-context)
-- [🚧 Experimental: Live Clock (Under Development)](#-experimental-live-clock-under-development)
-- [👨‍💻 Developer](#-developer)
+- [📁 Version Structure](#-version-structure)
+- [📈 Release Timeline](#-release-timeline)
+- [🔍 How to Navigate](#-how-to-navigate)
+- [🛠️ Compilation Notes](#️-compilation-notes)
+- [🔍 Exploring Experimental Features](#-exploring-experimental-features)
 
 ## 🌟 Overview
 
-This repository archives the **original Linux‑based implementation** of *Operating Environment* (OE) – a hobby project started during online school classes. OE is a console‑based “operating environment” that provides:
+The **Stable Releases** folder houses all completed, publicly announced versions of Operating Environment. Each version is self‑contained in its own subfolder, with the complete source code and a dedicated README detailing:
 
-- A command‑driven shell with a prompt and help system  
-- Multiple built‑in applications (games, utilities, solvers)  
-- User management (login, guest mode, password protection)  
-- A simple “registry” system to track application installation  
-- A hidden registry editor for power users  
-- Settings panel for personalization and system restore  
+- New features and improvements
+- Bug fixes and changes
+- Known issues (if any)
+- Compilation instructions
 
-All versions are written in **C++** (with some C‑style code) and rely on **Linux system calls and ANSI escape sequences** for terminal control. No external libraries are used – everything is hand‑crafted.
+These releases represent the project as it was presented to users – polished enough for daily use, yet still evolving with each iteration. Version 5.01.08 is the **final stable release** of the original Linux C++ lineage, incorporating years of bug fixes and refinements without adding new applications.
 
-The repository contains the complete evolution of the project, from the first simple release to the final stable version **v5.01.08** (February 2026), which incorporates years of bug fixes, input validation, and polish. Version 5 does **not** introduce new applications; it is the culmination of all improvements from the under‑development builds, making the environment as stable and user‑friendly as possible.
-
-## 🏗️ Repository Structure
+## 📁 Version Structure
 
 ```
-📦 Operating Environment Linux Based - Original Implementation
-├── 📁 Stable Releases/          # Officially released, stable versions
-│   ├── 📄 README.md
-│   ├── 📁 v1.0/                 # First release (TicTacToe, Quiz, Calculator, Temp_Conv)
-│   ├── 📁 v2.01/                # Added equation solver, bootscreen, faster installer
-│   ├── 📁 v3.0/                 # Difficulty levels, registry editor, cheat codes
-│   ├── 📁 v4.05.08/             # Quadratic equation solver, settings app, Kelvin support
-│   └── 📁 v5.01.08/             # Final stable release – bug fixes, input validation, polished UI
-│
-├── 📁 Under_dev Builds/          # Experimental builds and work‑in‑progress snapshots
-│   ├── 📄 README.md
-│   ├── 📁 v4.05.11/
-│   ├── 📁 v4.05.12/
-│   └── 📁 v4.23.09/
-│
-└── 📄 README.md                   # You are here
+📁 Stable Releases/
+├── 📁 v1.0/          # First public release
+├── 📁 v2.01/         # Second release – equation solver, bootscreen
+├── 📁 v3.0/          # Third release – difficulty levels, registry editor, cheat codes
+├── 📁 v4.05.08/      # Fourth release – quadratic solver, settings app, Kelvin support
+└── 📁 v5.01.08/      # Fifth/final release – bug fixes, input validation, polished UI
 ```
 
-Each version folder contains:
-- The complete source code (`.cpp`, `.h` files)
-- A dedicated `README.md` detailing the changes and features of that release
-- (For newer versions, multiple headers like `sources.h`, `programs.h`, `looks.h`)
+Each folder contains:
+- `main.cpp` – Entry point and main shell loop
+- Additional `.cpp` files for each application (e.g., `tictactoe.cpp`, `quiz.cpp`, `eqn_solver.cpp`)
+- Header files: `sources.h`, `Sources2.h`, `programs.h`, `looks.h` (depending on version)
+- A comprehensive `README.md` with version‑specific details
 
-## 🚀 Key Features Across Versions
+## 📈 Release Timeline
 
-### 🎮 Applications
-| Version | Applications |
-|---------|--------------|
-| **v1.0** | Tic‑Tac‑Toe, Quiz, Calculator, Temperature Converter |
-| **v2.01** | + Pair of Linear Equations Solver |
-| **v3.0** | + Difficulty levels in TicTacToe, enhanced Quiz, Registry Editor |
-| **v4.05.08** | + Quadratic Equation Solver, Settings App, Area of Triangle (CO) |
-| **v5.01.08** | **Final stable** – all previous features, plus bug fixes, input validation, unified version strings, and polished UI (no new apps) |
+| Version | Date (Approx.) | Key Features |
+|---------|----------------|--------------|
+| **v1.0** | Mid‑2020 | TicTacToe, Quiz, Calculator, Temperature Converter |
+| **v2.01** | Late 2020 | Linear equation solver, bootscreen, single login, faster installer |
+| **v3.0** | Early 2021 | Difficulty levels in TicTacToe, registry editor, cheat codes, enhanced equation solver |
+| **v4.05.08** | 2021–2022 | Quadratic equation solver, settings app, Kelvin support, user account improvements |
+| **v5.01.08** | February 2026 | **Final release** – all previous features, plus: <br>• Fixed uninstall commands (correct registry files)<br>• Complete input validation for numbers and operators<br>• Progress bar runs to 100%<br>• Unified version strings<br>• Simplified guest mode access<br>• Many small bug fixes and code cleanups |
 
-### 🔧 System Features
-- **User Management** – Login, guest mode, password creation/removal, user ID change
-- **Registry System** – Tracks which apps are “installed” via simple text files
-- **Registry Editor** – Hidden tool for power users (admin/limited modes)
-- **Settings Panel** – Centralised control for user accounts, reset/restore, and personalisation (border color)
-- **Bootscreens** – Custom loading screens for each application
-- **Cheat Codes** – Hidden shortcuts in games (e.g., instant win in TicTacToe)
+## 🔍 How to Navigate
 
-### 🛠️ Technical Highlights
-- Pure C++ (no external libraries)
-- ANSI escape sequences for colours and cursor positioning
-- File‑based “registry” (flat text files)
-- Platform‑specific code for Linux (`system("clear")`, `usleep`, etc.)
-- Modular (by function) but not yet separated into `.h`/`.c` pairs – preserved as originally written
+1. Choose a version folder that interests you.
+2. Read its `README.md` for an overview and compilation instructions.
+3. Browse the source code to see how features were implemented at that time.
+4. To run a version, compile it on a Linux system (or compatible terminal) and execute the resulting binary.
 
-## 🖥️ System Architecture
+## 🛠️ Compilation Notes
 
-```mermaid
-graph TD
-    A[Shell Prompt] --> B{Command Parser}
-    B --> C[Built‑in Apps]
-    B --> D[Registry Editor]
-    B --> E[Settings]
-    B --> F[User Management]
-    C --> G[TicTacToe]
-    C --> H[Quiz]
-    C --> I[Calculators]
-    C --> J[Equation Solvers]
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
+All versions were developed and tested on **Linux** using `g++`. They rely on:
+
+- Standard C++ libraries
+- Linux system calls (`system`, `usleep`)
+- ANSI escape sequences for console control
+
+**Generic compilation command** (specifics may vary per version):
+
+```bash
+g++ main.cpp [other .cpp files] -o oe_v[version]
+./oe_v[version]
 ```
 
-**Core Components:**
-- **`main.cpp`** – Entry point, bootscreen, initialises user session
-- **`sources.h` / `Sources2.h`** – Function declarations and shared code
-- **`programs.h`** – Game and utility implementations
-- **`looks.h`** – Colour definitions and border macros
-- **Registry files** – `.txt` files storing installation status (e.g., `TicTacToe.txt`)
+Refer to each version's README for exact file lists and any version‑specific requirements.
 
-## 📦 Historical Context
+## 🔍 Exploring Experimental Features
 
-> *"During the COVID lockdown, my teacher asked me to build a quiz app for conducting online quizzes. That single program grew into an entire operating environment."*
-
-**Timeline:**
-- **Mid‑2020** – v1.0: First release (quiz, tictactoe, calculator, temp converter)
-- **Late 2020** – v2.01: Added equation solver, bootscreen, single login
-- **Early 2021** – v3.0: Difficulty levels, registry editor, cheat codes
-- **Late 2021** – v4.05.08: Quadratic solver, settings app, Kelvin support
-- **2022–2025** – Under‑dev builds: experimental features, refinements, bug hunting
-- **February 2026** – v5.01.08: Final stable release, closing the Linux C++ lineage
-
-This repository preserves the exact source code of each version, exactly as it was when released or saved. It is a **historical archive**, showing the evolution of a hobby project over six years. Some code may be messy, some features may be unfinished – but that is the beauty of a genuine learning journey.
-
-## 🚧 Experimental: Live Clock (Under Development)
-
-An experimental branch (`underdev-live-clock`) contains a **partially working implementation of a real‑time updating clock** displayed in the top border. The goal was to have the date and time refresh every second without blocking user input, using non‑blocking input (`select`) and raw terminal mode.
-
-**What works:**
-- The clock displays and updates when the program is idle.
-- Basic line editing and command history are functional.
-
-**What's broken:**
-- Raw mode conflicts with `cin` in many applications (TicTacToe, quiz, etc.).
-- Cursor behaviour can be erratic.
-- The code became too complex to maintain alongside the stable release.
-
-This branch is **preserved for reference** and as a starting point for future attempts (e.g., in the `oe-reboot` project). It is **not recommended for general use** and may crash or behave unexpectedly.
-
-If you are curious, you can check out the branch and explore the code – but be prepared for a bumpy ride.
-
-## 👨‍💻 Developer
-
-<div align="center">
-
-### **Subhajit Halder** 💻
-
-![Profile](https://img.shields.io/badge/Developer-Subhajit_Halder-blue?style=for-the-badge)
-
-📧 **Email**: [subhajithalder267@outlook.com](mailto:subhajithalder267@outlook.com)
-
-</div>
-
-### 🛠️ What This Project Represents
-- **Self‑taught programming** – Learned from books, YouTube, Stack Overflow, GeeksforGeeks
-- **Perseverance** – Five major releases and countless improvements over six years
-- **Systems thinking** – Building a cohesive environment from scratch
-- **Creative problem‑solving** – Implementing features like a registry editor, cheat codes, and a full settings panel in a console
-
-### 🔗 Related Repositories
-- [**OE Windows Based**](https://github.com/yourusername/oe-windows) – Ports of the same environment to Windows (C++ legacy and C modern)
-- [**OE Reboot**](https://github.com/yourusername/oe-reboot) – A clean, portable rewrite in C with platform abstraction, aiming for bare‑metal execution
+If you're curious about the **experimental real‑time clock** feature (which was attempted but not stabilised), you can find the ongoing work in the **`Under_dev Builds`** directory at the root of this repository. Those builds are not stable and may contain bugs, but they showcase the direction of future experimentation.
 
 ---
 
 <div align="center">
 
-### **Exploring the Roots of a Systems Programming Journey** 🌱
-
-*Every expert was once a beginner. This is the record of that beginning.*
+*Each release is a snapshot of the project's growth – explore them in order to witness the journey.*
 
 </div>
