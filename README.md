@@ -121,7 +121,7 @@ graph TD
 - **Mid‑2020** – v1.0: First release (quiz, tictactoe, calculator, temp converter)
 - **Late 2020** – v2.01: Added equation solver, bootscreen, single login
 - **Early 2021** – v3.0: Difficulty levels, registry editor, cheat codes
-- **2021–2022** – v4.05.08: Quadratic solver, settings app, Kelvin support
+- **Late 2021** – v4.05.08: Quadratic solver, settings app, Kelvin support
 - **Under‑dev builds** – Experimental features and refinements
 
 This repository preserves the exact source code of each version, exactly as it was when released or saved. It is a **historical archive**, showing the evolution of a hobby project over two years. Some code may be messy, some features may be unfinished – but that is the beauty of a genuine learning journey.
